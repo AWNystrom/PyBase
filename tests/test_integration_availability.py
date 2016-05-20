@@ -109,14 +109,14 @@ def hbase_shell(cmd):
 
 
 def start_region_servers(server_ids):
-    print ""
+    print("")
     a = [os.environ['HBASE_HOME'] + "/bin/local-regionservers.sh",
          "start", ' '.join(server_ids)]
     subprocess.call(a)
 
 
 def stop_region_servers(server_ids):
-    print ""
+    print("")
     a = [os.environ['HBASE_HOME'] + "/bin/local-regionservers.sh",
          "stop", ' '.join(server_ids)]
     subprocess.call(a)
